@@ -27,7 +27,8 @@
     min-width: 80px;
     text-align: center;
     /*margin-top: 23px;*/
-    padding: 8px
+    padding: 8px;
+    background: transparent;
 }
 button:focus, input:focus{
     outline: none!important;
