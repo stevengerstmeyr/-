@@ -68,15 +68,15 @@ a {
 .video {
     height: 100vh;
     width: 100%;
-    background-image: url(resources/images/background2.svg);
+    background-image: url('resources/images/background2.svg');
     background-size: cover;
     transition: 0.5s;
 }
 
 .video:hover {
-    background-image: url(resources/images/background_dark.svg);
+    background-image: url('resources/images/background_dark.svg');
     transition: 0.5s;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 .video:hover > h1 {
@@ -291,7 +291,7 @@ nav #any {
     width: 36px;
     height: 36px;
     float: left;
-    background: url('resources/SGLogo/SGLogoBlack.png');
+    background: url(resources/SGLogo/SGLogoBlack.png);
     background-size: cover;
     transition: 0.2s;
     margin-top: -18px;
@@ -304,7 +304,7 @@ nav #any {
     width: 36px;
     height: 36px;
     float: left;
-    background: url('resources/SGLogo/SGLogoOrange.png');
+    background: url(resources/SGLogo/SGLogoOrange.png);
     background-size: cover;
     transition: 0.2s;
     margin-top: -18px;
@@ -318,7 +318,7 @@ nav #any {
 #menubuttondiv {
     width: 36px;
     height: 36px;
-    background: url('resources/images/menuButtonBlack.gif');
+    background: url(resources/images/menuButtonBlack.gif);
     background-size: cover;
     transition: 0.2s;
     margin-top: -8px;
@@ -331,7 +331,7 @@ nav input {
 #menubuttondiv:hover {
     width: 36px;
     height: 36px;
-    background: url('resources/images/menuButtonOrange.gif');
+    background: url(resources/images/menuButtonOrange.gif);
     background-size: cover;
     transition: 0.2s;
     margin-top: -8px;
