@@ -1,17 +1,43 @@
 /*GENERAL*/
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) 
+    and (orientation : portrait) { 
+    .whitebackground {
+        z-index: 20!important;
+        background: white;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) 
+    and (orientation : landscape) {
+    .whitebackground {
+        z-index: 20!important;
+        background: black;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', thin;
 }
 
-.whitebackground {
+/*.whitebackground {
     width: 100%;
     background: white;
     position: relative;
     top: 0px;
-}
+}*/
 
 .container {
     width: 800px;
