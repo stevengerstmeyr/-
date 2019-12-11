@@ -1,9 +1,9 @@
 /*GENERAL*/
 
 @media only screen 
-    and (device-width : 375px) 
+    /*and (device-width : 375px) 
     and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) 
+    and (-webkit-device-pixel-ratio : 2) */
     and (orientation : portrait) { 
     .whitebackground {
         z-index: 20!important;
@@ -14,9 +14,9 @@
 }
 
 @media only screen 
-    and (device-width : 375px) 
+    /*and (device-width : 375px) 
     and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2) 
+    and (-webkit-device-pixel-ratio : 2)*/
     and (orientation : landscape) {
     .whitebackground {
         z-index: 20!important;
