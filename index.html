@@ -13,10 +13,7 @@
     <!-- CSS FILES -->
     <!-- link href="css/portfolioDesktop.css" type="text/css" rel="stylesheet" -->
     <!--link rel="stylesheet" type="text/css" href="css/general.css"-->
-    <link rel="stylesheet" type="text/css" media="(min-width:12011px)" href="css/desktop.css">
-    <!--link rel="stylesheet" type="text/css" media="(min-width:769px)" href="css/tablet.css"-->
-    <link rel="stylesheet" type="text/css" media="(max-width:1200px) and (orientation: portrait)" href="css/phoneportrait.css">
-    <link rel="stylesheet" type="text/css" media="(max-width:1200px) and (orientation: landscape)" href="css/phonelandscape.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:1px)" href="css/alldevices.css">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -67,12 +64,15 @@
                     N = $slides.length,
                     C = 3,
                     itv = null;
+
                 function play() {
                     itv = setInterval(anim, 3500);
                 }
+
                 function stop() {
                     clearInterval(itv);
                 }
+
                 function anim() {
                     C = ($(this).is(".prev") ? --C : ++C) < 0 ? N - 1 : C % N;
                     $movable.css({
@@ -251,55 +251,37 @@
         </div>
     </nav>
 
-    <!-- TO DO LIST -->
-    <div class="todo">
-        <div class="todoheading">
-            <h1>To Do List</h1>
-        </div>
-        <div class="todolist">
-            <li>nav bar </li>
-            <li>background video </li>
-            <li>CI (gray, orange, white) </li>
-            <li>CV </li>
-            <li>JavaScript (calc, forecast)</li>
-            <li>PHP (Login)</li>
-            <li>Workout Plans </li>
-            <li>pictures gallery</li>
-            <li>youtube</li>
-            <li>contact formula</li>
-            <li>footer and copyright and rights </li>
-        </div>
-    </div>
     <!-- MAIN -->
     <div class="mainbody" id="mainbody">
-        <div class="video" id="mainvideo">
+        <div id="landingpage">
             <h1 id="videoh1">Steven Gerstmeyr // Portfolio</h1>
-            <h2 id="videoh2">www.stevensportfol.io</h2>
-            <!--video autoplay muted loop id="myVideo">
-            <source src="Images/testme.mp4" type="video/mp4">
-        </video>-->
-            <!--<img src="Images/background2.svg" alt="">-->
+            <h2 id="videoh2">created by myself</h2>
+            <div class="arrowcontainer">
+                <a data-scroll href="#box1">
+                    <div class="arrow"></div>
+                </a>
+            </div>
         </div>
         <div class="whitebackground">
-            <div class="container main">
+            <div class="main">
                 <div class="mainbox">
                     <div class="box" id="box1">
                         <img src="resources/images/example1.JPG" alt="">
-                        <div class="markuptext">
-                            <h1>test one</h1>
-                            <a href="">whatever link</a>
-                        </div>
+                        <h1>san diego</h1>
                     </div>
                     <div class="box" id="box2">
                         <img src="resources/images/example2.JPG" alt="">
-                        <h1>two</h1>
+                        <h1>san francisco</h1>
                     </div>
                     <div class="box" id="box3">
                         <img src="resources/images/example3.JPG" alt="">
-                        <h1>three</h1>
+                        <h1>death valley</h1>
                     </div>
                 </div>
-                <div class="wodays">
+                <hr />
+                <div class="wodays" id="wodays">
+                    <h1>upcoming workout plan</h1>
+                    <h2>when my chest hast fully recovered</h2>
                     <button onclick="woday1()">Chest & Tri</button>
                     <div id="woday1">
                         detailed info for chest n tri
@@ -327,11 +309,11 @@
                 </div>
                 <section class="woplans">
                     <p>
-                    dips are missing
-                    <h2>Day 1: PUSH</h2>
+                        dips are missing
+                        <h2>Day 1: PUSH</h2>
                         4x5 bench
                         4x12 incline DB press
-                        3x15 incline flys  SS chest finisher
+                        3x15 incline flys SS chest finisher
                         4x8 overhead DB press
                         3x12 lateral raises
                         5x10 triceps rope extensions DS
@@ -366,11 +348,10 @@
                         4x10 rear delt raises (& SS shrugs)
                         5x10 french press & SS ez bar curls
                         5x10 cable pushdowns & SS cable curls<p>
-                    </p>
+                        </p>
                 </section>
             </div>
             <!-- FOOTER -->
-
             <div class="footer">
                 <div id="footertext"> 2019<br> <br>Steven Gerstmeyr</div>
                 <div id="footerbuttons">
