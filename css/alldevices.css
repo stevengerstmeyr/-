@@ -14,7 +14,7 @@ and (orientation : portrait) {
 }
 
 /*DESKTOP*/
-@media only screen and (min-width : 577px)
+@media only screen and (min-width : 7690px)
 
 /*and (device-height : 667px) 
 and (-webkit-device-pixel-ratio : 2)
@@ -620,7 +620,7 @@ and (orientation : landscape)*/
 }
 
 /*PHONE*/
-@media only screen and (max-width:576px)
+@media only screen and (max-width:768px)
 
 /*and (-webkit-device-pixel-ratio:2)
     and (orientation : portrait)*/
@@ -630,7 +630,7 @@ and (orientation : landscape)*/
     }
 
     .container {
-        width: 800px;
+        width: 100%;
         margin: auto;
         background: white;
         overflow: hidden;
@@ -929,7 +929,7 @@ and (orientation : landscape)*/
         /*margin-top: 100vh;*/
         height: ;
         background: ;
-        box-shadow: 0px 5px 5px 5px #E1e1e1;
+        /*box-shadow: 0px 5px 5px 5px #E1e1e1;*/
         overflow: hidden;
     }
 
