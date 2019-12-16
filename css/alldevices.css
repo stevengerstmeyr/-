@@ -105,7 +105,7 @@
         height: 40px;
         /*max-height: 7%;*/
         z-index: 3;
-        background-color: #FFFFFF;
+        background-color: #000000;
         /*border-bottom: 1px solid #FFFFFF;*/
         opacity: 1.0;
         transition: 0.5s;
