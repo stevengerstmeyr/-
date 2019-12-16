@@ -679,7 +679,7 @@ and (orientation : landscape)*/
     #landingpage {
         height: 100vh;
         width: 100%;
-        background-image: url("../resources/images/background2.svg");
+        background-image: url("../resources/images/me_landingpage.png");
         background-size: cover;
         transition: 0.5s;
     }
